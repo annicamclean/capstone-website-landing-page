@@ -9,6 +9,11 @@ import Team from './components/Team';
 import Installation from './components/Installation';
 import Footer from './components/Footer';
 
+// Add this type
+type ColorModeProps = {
+	colorMode: 'light' | 'dark';
+};
+
 // 1. Define the color mode config
 const config: ThemeConfig = {
 	initialColorMode: 'dark',
@@ -47,7 +52,7 @@ const theme = extendTheme({
 	config,
 	colors,
 	styles: {
-		global: (props) => ({
+		global: (props: ColorModeProps) => ({
 			body: {
 				bg: props.colorMode === 'dark' ? 'darkMode.background' : 'lightMode.background',
 				color: props.colorMode === 'dark' ? 'darkMode.text.primary' : 'lightMode.text.primary',
@@ -56,7 +61,7 @@ const theme = extendTheme({
 	},
 	components: {
 		Box: {
-			baseStyle: (props) => ({
+			baseStyle: (props: ColorModeProps) => ({
 				bg: props.colorMode === 'dark' ? 'darkMode.card' : 'lightMode.card',
 			}),
 		},
@@ -65,7 +70,7 @@ const theme = extendTheme({
 				fontWeight: 'bold',
 			},
 			variants: {
-				solid: (props) => ({
+				solid: (props: ColorModeProps) => ({
 					bg: props.colorMode === 'dark' ? 'blue.500' : 'blue.600',
 					color: 'white',
 					_hover: {

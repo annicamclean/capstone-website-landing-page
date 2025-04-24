@@ -1,5 +1,5 @@
 // src/components/Team.tsx
-import { Box, Container, SimpleGrid, Image, Text, Stack, Link, Icon, useColorModeValue, IconButton, Tooltip, HStack, VStack } from '@chakra-ui/react';
+import { Box, Container, SimpleGrid, Image, Text, Stack, Link,  useColorModeValue, IconButton, Tooltip, HStack, VStack } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaGlobe, FaFileAlt } from 'react-icons/fa';
 
 interface TeamMember {
@@ -169,7 +169,7 @@ const TeamMember = ({ member }: { member: TeamMember }) => {
 };
 
 const Team = () => {
-    const bg = useColorModeValue('gray.50', 'gray.800');
+    const bg = useColorModeValue('gray.50', 'gray.900');
     const headingColor = useColorModeValue('gray.800', 'white');
 
     const teamMembers: TeamMember[] = [
@@ -177,11 +177,11 @@ const Team = () => {
             name: "Annica McLean",
             role: "Full Stack Developer",
             futureRole: "Software Engineer",
-            image: "/path-to-image.jpg",
+            image: "/images/annica.jpg",
             github: "https://github.com/annicamclean",
             linkedin: "https://linkedin.com/in/annicamclean",
             email: "annicamcl@gmail.com",
-            resume: "../assets/Annica McLean Resume.pdf",
+            resume: "/resumes/Annica_McLean_Current_Resume.pdf",
             website: "https://annicamclean.github.io/"
         },
         // Add other team members
