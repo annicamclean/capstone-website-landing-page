@@ -177,7 +177,7 @@ const Team = () => {
             name: "Annica McLean",
             role: "Full Stack Developer",
             futureRole: "Software Engineer",
-            image: "/images/annica.jpg",
+            image: "../assets/",
             github: "https://github.com/annicamclean",
             linkedin: "https://linkedin.com/in/annicamclean",
             email: "annicamcl@gmail.com",
@@ -186,26 +186,26 @@ const Team = () => {
         },
         // Add other team members
         {
-            name: "John Doe",
-            role: "Full Stack Developer",
-            futureRole: "Software Architect",
-            image: "/path-to-image.jpg",
-            github: "https://github.com/johndoe",
-            linkedin: "https://linkedin.com/in/johndoe",
-            email: "john@example.com",
+            name: "Mogoi Matongo",
+            role: "Test and Backend Developer",
+            futureRole: "cyber Security Field",
+            image: "../assets/images/thumbnail_IMG_8435.jpg",
+            github: "https://github.com/youngmogoi",
+            linkedin: "5. https://www.linkedin.com/in/mogoi-m-58842a248",
+            email: "mematongo@gmail.com",
             resume: "/resumes/john-doe-resume.pdf",
-            website: "https://johndoe.com"
+            website: ""
         },
         {
-            name: "John Doe",
-            role: "Full Stack Developer",
-            futureRole: "Software Architect",
-            image: "/path-to-image.jpg",
-            github: "https://github.com/johndoe",
-            linkedin: "https://linkedin.com/in/johndoe",
-            email: "john@example.com",
-            resume: "/path-to-resume.pdf",
-            website: "https://johndoe.com"
+            name: "Andrew Nice",
+            role: "",
+            futureRole: "",
+            image: "",
+            github: "",
+            linkedin: "",
+            email: "",
+            resume: "",
+            website: ""
         },
     ];
 
